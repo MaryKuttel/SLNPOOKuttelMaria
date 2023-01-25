@@ -14,12 +14,12 @@ namespace WindowsEFDatos.Dac
 
         public static List<Avion> Listar()
         {
-            return context.Avion.ToList();
+            return context.Aviones.ToList();
         }
 
         public static int InsertAvion(Avion avion)
         {
-            context.Avion.Add(avion);
+            context.Aviones.Add(avion);
             return context.SaveChanges();
         }
 

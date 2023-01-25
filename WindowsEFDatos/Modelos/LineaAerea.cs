@@ -8,6 +8,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace WindowsEFDatos.Modelos
 {
+    [Table("LineaAerea")]
     public class LineaAerea
     {
 
@@ -25,13 +26,13 @@ namespace WindowsEFDatos.Modelos
         public List<Avion> Aviones { get; set; }
 
 
-        public LineaAerea(int idLinea, string nombre, DateTime fechaInicio, List<Avion> aviones)
+        /* public LineaAerea(int idLinea, string nombre, DateTime fechaInicio, List<Avion> aviones)
         {
             IdLinea= idLinea;
             Nombre= nombre;
             FechaInicioActividad= fechaInicio;
             Aviones= aviones;
-        }
+        }*/
 
 
 

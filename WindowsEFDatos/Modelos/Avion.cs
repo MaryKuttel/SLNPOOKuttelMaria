@@ -11,6 +11,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace WindowsEFDatos.Modelos
 {
+    [Table("Avion")]
     public class Avion
     {
         [Key]
@@ -24,14 +25,19 @@ namespace WindowsEFDatos.Modelos
         [Required]
         public string Denominacion { get; set; }
 
+        public int IdLinea { get; set; }
 
-        public Avion(int idAvion, int capacidad, string denominacion) 
+        [ForeignKey("IdLinea")]
+        public LineaAerea LineaAerea { get; set; }
+
+
+       /* public Avion(int idAvion, int capacidad, string denominacion) 
         { 
             IdAvion= idAvion;
             Capacidad= capacidad;
             Denominacion= denominacion;
         
-        }
+        }*/
 
     }
 }

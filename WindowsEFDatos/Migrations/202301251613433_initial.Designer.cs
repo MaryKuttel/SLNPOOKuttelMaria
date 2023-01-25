@@ -13,7 +13,7 @@ namespace WindowsEFDatos.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202301181929356_initial"; }
+            get { return "202301251613433_initial"; }
         }
         
         string IMigrationMetadata.Source

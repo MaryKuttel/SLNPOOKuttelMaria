@@ -16,8 +16,8 @@ namespace WindowsEFDatos.Data
         
         }
 
-        public DbSet<LineaAerea> LineaAerea { get; set;}
-        public DbSet<Avion> Avion { get; set;}
+        public DbSet<LineaAerea> LineaAereas { get; set;}
+        public DbSet<Avion> Aviones { get; set;}
 
 
 

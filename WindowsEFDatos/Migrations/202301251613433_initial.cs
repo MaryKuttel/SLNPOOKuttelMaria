@@ -8,20 +8,20 @@
         public override void Up()
         {
             CreateTable(
-                "dbo.Avions",
+                "dbo.Avion",
                 c => new
                     {
                         IdAvion = c.Int(nullable: false, identity: true),
                         Capacidad = c.Int(nullable: false),
                         Denominacion = c.String(nullable: false, maxLength: 50, unicode: false),
-                        LineaAerea_IdLinea = c.Int(),
+                        IdLinea = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.IdAvion)
-                .ForeignKey("dbo.LineaAereas", t => t.LineaAerea_IdLinea)
-                .Index(t => t.LineaAerea_IdLinea);
+                .ForeignKey("dbo.LineaAerea", t => t.IdLinea, cascadeDelete: true)
+                .Index(t => t.IdLinea);
             
             CreateTable(
-                "dbo.LineaAereas",
+                "dbo.LineaAerea",
                 c => new
                     {
                         IdLinea = c.Int(nullable: false, identity: true),
@@ -34,10 +34,10 @@
         
         public override void Down()
         {
-            DropForeignKey("dbo.Avions", "LineaAerea_IdLinea", "dbo.LineaAereas");
-            DropIndex("dbo.Avions", new[] { "LineaAerea_IdLinea" });
-            DropTable("dbo.LineaAereas");
-            DropTable("dbo.Avions");
+            DropForeignKey("dbo.Avion", "IdLinea", "dbo.LineaAerea");
+            DropIndex("dbo.Avion", new[] { "IdLinea" });
+            DropTable("dbo.LineaAerea");
+            DropTable("dbo.Avion");
         }
     }
 }

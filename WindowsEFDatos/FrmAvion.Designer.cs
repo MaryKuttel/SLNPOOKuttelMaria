@@ -34,9 +34,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtDenominacion = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.intCapacidad = new System.Windows.Forms.NumericUpDown();
+            this.intCapacidad = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.GridAviones)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.intCapacidad)).BeginInit();
             this.SuspendLayout();
             // 
             // listarAviones
@@ -99,7 +98,7 @@
             // 
             this.intCapacidad.Location = new System.Drawing.Point(514, 89);
             this.intCapacidad.Name = "intCapacidad";
-            this.intCapacidad.Size = new System.Drawing.Size(157, 20);
+            this.intCapacidad.Size = new System.Drawing.Size(169, 20);
             this.intCapacidad.TabIndex = 6;
             // 
             // FrmAvion
@@ -118,7 +117,6 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.FrmAvion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GridAviones)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.intCapacidad)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -132,7 +130,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtDenominacion;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.NumericUpDown intCapacidad;
+        private System.Windows.Forms.TextBox intCapacidad;
     }
 }
 

@@ -31,7 +31,8 @@ namespace WindowsEFDatos
 
         private void insertarAvion_Click(object sender, EventArgs e)
         {
-            Avion avion = new Avion() { Capacidad = Convert.ToInt32(intCapacidad), Denominacion = txtDenominacion.Text };
+            LineaAerea lineaAerea = new LineaAerea() { Nombre = "Aerolineas Argentinas", FechaInicioActividad = new DateTime(2023, 05, 05) };
+            Avion avion = new Avion() { Capacidad = Convert.ToInt32(intCapacidad.Text), Denominacion = txtDenominacion.Text, LineaAerea = lineaAerea };
 
             int filasAfectadas = ABMAvion.InsertAvion(avion);
             if(filasAfectadas > 0 )

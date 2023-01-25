@@ -64,17 +64,9 @@
     <Compile Include="FrmAvion.Designer.cs">
       <DependentUpon>FrmAvion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202301181929356_initial.cs" />
-    <Compile Include="Migrations\202301181929356_initial.designer.cs">
-      <DependentUpon>202301181929356_initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202301181938209_avanzando.cs" />
-    <Compile Include="Migrations\202301181938209_avanzando.designer.cs">
-      <DependentUpon>202301181938209_avanzando.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202301181943009_probandoconexion.cs" />
-    <Compile Include="Migrations\202301181943009_probandoconexion.designer.cs">
-      <DependentUpon>202301181943009_probandoconexion.cs</DependentUpon>
+    <Compile Include="Migrations\202301251613433_initial.cs" />
+    <Compile Include="Migrations\202301251613433_initial.designer.cs">
+      <DependentUpon>202301251613433_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Modelos\Avion.cs" />
@@ -84,14 +76,8 @@
     <EmbeddedResource Include="FrmAvion.resx">
       <DependentUpon>FrmAvion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202301181929356_initial.resx">
-      <DependentUpon>202301181929356_initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202301181938209_avanzando.resx">
-      <DependentUpon>202301181938209_avanzando.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202301181943009_probandoconexion.resx">
-      <DependentUpon>202301181943009_probandoconexion.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202301251613433_initial.resx">
+      <DependentUpon>202301251613433_initial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
