@@ -30,12 +30,12 @@ namespace LibTransportes.Entidades.Vehiculos
 
         public override string Acelerar()
         {
-            return base.Acelerar() + "\nEl Camión acelero a una velocidad de 5m/s";
+            return "\nEl Camión acelero a una velocidad de 5m/s";
         }
 
         public override string Frenar()
         {
-            return base.Frenar() + "\nEl Camión freno con las ruedas delanteras";
+            return "\nEl Camión freno con las ruedas delanteras";
         }
         public override string Imprimir()
         {

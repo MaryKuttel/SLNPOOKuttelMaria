@@ -22,12 +22,12 @@ namespace LibTransportes.Entidades.Vehiculos
 
         public override string Acelerar()
         {
-            return base.Acelerar() + "\nEl Auto Electrico acelero a una velocidad de 10m/s";
+            return "\nEl Auto Electrico acelero a una velocidad de 10m/s";
         }
 
         public override string Frenar()
         {
-            return base.Frenar() + "\nEl Auto Electrico freno con las ruedas traseras";
+            return "\nEl Auto Electrico freno con las ruedas traseras";
         }
 
         public override string Imprimir()

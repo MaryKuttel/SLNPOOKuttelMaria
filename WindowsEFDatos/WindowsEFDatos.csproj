@@ -58,11 +58,11 @@
   <ItemGroup>
     <Compile Include="Dac\ABMAvion.cs" />
     <Compile Include="Data\DBLineaAereaContext.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="FrmAvion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FrmAvion.Designer.cs">
+      <DependentUpon>FrmAvion.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\202301181929356_initial.cs" />
     <Compile Include="Migrations\202301181929356_initial.designer.cs">
@@ -81,6 +81,9 @@
     <Compile Include="Modelos\LineaAerea.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAvion.resx">
+      <DependentUpon>FrmAvion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202301181929356_initial.resx">
       <DependentUpon>202301181929356_initial.cs</DependentUpon>
     </EmbeddedResource>

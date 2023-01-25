@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LibTransportes.Entidades.Vehiculos
 {
-    public class Vehiculo
+    public abstract class Vehiculo
     {
 
         public int Ruedas { get; set; }
@@ -19,15 +19,9 @@ namespace LibTransportes.Entidades.Vehiculos
 
         }
 
-        public virtual string Acelerar()
-        {
-            return "El Vehículo ha acelerado.";
-        }
+        public abstract string Acelerar();
 
-        public virtual string Frenar()
-        {
-            return "El vehículo ha frenado.";
-        }
+        public abstract string Frenar();
 
         public virtual string Imprimir()
         {

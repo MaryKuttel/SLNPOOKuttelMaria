@@ -12,7 +12,7 @@ namespace WindowsEFDatos.Dac
     {
         private static DBLineaAereaContext context = new DBLineaAereaContext();
 
-        public static List<Avion> SelectAll()
+        public static List<Avion> Listar()
         {
             return context.Avion.ToList();
         }
